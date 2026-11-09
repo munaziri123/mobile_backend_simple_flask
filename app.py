@@ -37,12 +37,24 @@ def get_all_students():
         "data": STUDENTS_DATA
     }), 200
 
+@app.route('/api/v1/stats', methods=['GET'])
+def get_class_stats():
+    gpas = [s['gpa'] for s in STUDENTS_DATA]
+    stats = {
+        "institution": "ENSIA",
+        "total_students": len(STUDENTS_DATA),
+        "class_average_gpa": round(sum(gpas) / len(gpas), 2),
+        "highest_gpa": max(gpas),
+        "lowest_gpa": min(gpas)
+    }
+    return jsonify({"status": "success", "data": stats}), 200
+
 @app.route('/', methods=['GET'])
 def root():
     return jsonify({
         "status": "success",
         "service": "ENSIA Student Marks Portal API",
-        "available_endpoints": ["/api/v1/students"]
+        "available_endpoints": ["/api/v1/students", "/api/v1/stats"]
     }), 200
 
 if __name__ == '__main__':
