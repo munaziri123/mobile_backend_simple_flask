@@ -1,0 +1,46 @@
+﻿[
+  {
+    "id": "ENSIA-2026-001",
+    "name": "Amine Rahmani",
+    "specialty": "Artificial Intelligence",
+    "modules": [
+      { "name": "Mobile Development", "mark": 17.5 },
+      { "name": "Cloud Computing", "mark": 16.0 },
+      { "name": "Distributed Systems", "mark": 18.0 }
+    ],
+    "gpa": 17.17
+  },
+  {
+    "id": "ENSIA-2026-002",
+    "name": "Sarah Benali",
+    "specialty": "Data Science",
+    "modules": [
+      { "name": "Mobile Development", "mark": 15.0 },
+      { "name": "Cloud Computing", "mark": 14.5 },
+      { "name": "Machine Learning", "mark": 16.5 }
+    ],
+    "gpa": 15.33
+  },
+   {
+    "id": "ENSIA-2026-003",
+    "name": "Sarah Benali",
+    "specialty": "Data Science",
+    "modules": [
+      { "name": "Mobile Development", "mark": 15.0 },
+      { "name": "Cloud Computing", "mark": 14.5 },
+      { "name": "Machine Learning", "mark": 16.5 }
+    ],
+    "gpa": 15.33
+  },
+  {
+    "id": "ENSIA-2026-004",
+    "name": "Youssef El Amrani",
+    "specialty": "Cybersecurity",
+    "modules": [
+      { "name": "Network Security", "mark": 18.0 },
+      { "name": "Cryptography", "mark": 17.5 },
+      { "name": "Ethical Hacking", "mark": 16.0 }
+    ],
+    "gpa": 17.17
+  }
+]
